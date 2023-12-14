@@ -1,0 +1,10 @@
+<doc xmlns="https://hyperview.org/hyperview">
+  <screen id="main">
+    <styles>
+      <style id="Main" flex="1" backgroundColor="#fff" alignItems="center" justifyContent="center" />
+    </styles>
+    <body  style="Main">
+      <text>Open up App.js to start working on your app!</text>
+    </body>
+  </screen>
+</doc>

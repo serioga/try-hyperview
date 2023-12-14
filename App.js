@@ -1,20 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Hyperview from 'hyperview';
+import { ENTRY_POINT_URL } from './src/constants';
+import { fetchWrapper, formatDate } from './src/helpers';
 
-export default function App() {
+export default function App () {
+  console.log("ENTRY_POINT_URL", ENTRY_POINT_URL)
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Hyperview entrypointUrl={ ENTRY_POINT_URL }
+               fetch={ fetchWrapper }
+               formatDate={ formatDate }/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
