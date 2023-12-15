@@ -1,12 +1,9 @@
-import Hyperview from 'hyperview';
-import { ENTRY_POINT_URL } from './src/constants';
-import { fetchWrapper, formatDate } from './src/helpers';
+import 'react-native-gesture-handler'
+import Navigator from './src/Navigator';
+import React from 'react';
 
 export default function App () {
-  console.log("ENTRY_POINT_URL", ENTRY_POINT_URL)
   return (
-    <Hyperview entrypointUrl={ ENTRY_POINT_URL }
-               fetch={ fetchWrapper }
-               formatDate={ formatDate }/>
+    <Navigator />
   );
 }
