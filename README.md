@@ -2,14 +2,11 @@
 
 ## Development
 
-### Serve HXML templates
-
 ```sh
-npm run dev:templates
+yarn dev
 ```
 
-### Run expo app
+This command starts processes:
 
-```sh
-npx expo start
-```
+- Hyperview app backend server with HXML templates
+- Expo development server
