@@ -7,7 +7,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "dev:templates": "servor ./templates index.xml 5000"
+    "dev:templates": "servor ./templates index.xml 5000",
+    "dev": "concurrently --raw --kill-others \"yarn dev:templates\" \"yarn start\""
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "7.2.0",
