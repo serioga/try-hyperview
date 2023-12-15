@@ -1,4 +1,6 @@
-export const ENTRY_POINT_URL = 'http://192.168.2.113:5000/index.xml';
+import { ENTRY_POINT_URL as URL } from "@env"
+
+export const ENTRY_POINT_URL = URL;
 
 export const MAIN_STACK_NAME = 'Main';
 
