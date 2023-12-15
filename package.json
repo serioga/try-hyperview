@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "dev:templates": "servor ./templates index.xml 5000",
-    "dev": "concurrently --raw --kill-others \"yarn dev:templates\" \"yarn start\""
+    "dev": "concurrently --raw --kill-others -P \"yarn dev:templates\" \"yarn start {@}\" --"
   },
   "dependencies": {
     "@react-native-community/datetimepicker": "7.2.0",
@@ -31,6 +31,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "concurrently": "^8.2.0",
+    "react-native-dotenv": "^3.4.9",
     "servor": "^4.0.2"
   },
   "private": true
